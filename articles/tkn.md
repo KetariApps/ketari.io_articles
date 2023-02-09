@@ -50,7 +50,11 @@ While L <= |D|
     If W not exists in S
         Add node W to S
         L = 1
-        O = O + L - 1
+        Let O_n = O + L - 1
+        If O_n < 0
+            O = 0
+        Else
+            O = O_n
 
     Add a directed arc the second to last node in R to node W in S
 
