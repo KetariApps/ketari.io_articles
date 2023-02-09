@@ -20,8 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip3 install python-frontmatter
-        pip3 install ruamel.yaml
+        pip3 install python-frontmatter ruamel.yaml
 
     - name: Extract Metadata
       run: |

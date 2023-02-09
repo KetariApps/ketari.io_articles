@@ -7,9 +7,9 @@ def combine_files():
     data = {}
 
     # Get a list of all markdown files in the "articles" directory
-    for filename in os.listdir("../../articles"):
+    for filename in os.listdir("./articles"):
         if filename.endswith(".md"):
-            file_path = os.path.join("../../articles", filename)
+            file_path = os.path.join("./articles", filename)
 
             with open(file_path) as f:
 
@@ -20,7 +20,7 @@ def combine_files():
                 data[filename] = metadata
 
     # Write the combined data to data.yml
-    with open("../../data.yml", "w") as f:
+    with open("./data.yml", "w") as f:
         yaml = ruamel.yaml.YAML()
         yaml.dump(data, f)
 
