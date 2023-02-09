@@ -32,8 +32,6 @@ This tokenization algorithm uses a dynamic sliding window approach to parse toke
 
 W only grows when its content is a node in S. This means that the window will only grow if it contains a previously encountered token. In a regular example of the language, this means that the window will often be able to grow and create new relationships in S because there are many repeated tokens. On the other hand, in a randomly generated string of characters, there will be fewer repeating tokens and the window will not be able to grow as regularly. The algorithm will still add nodes to S, but they will not likely correspond to recognizable morphemes. Some nodes in S will still have a high degree of centrality, but the distribution of nodes with high centrality will be skewed toward nodes of shorter lengths because there are fewer permutations of characters as length (n) approaches 1.
 
-This algorithm exploits a fundamental principle of language to learn morphemes without prior information, using centrality as an indicator of morphological confidence.
-
 ### Algorithm
 
 ```
