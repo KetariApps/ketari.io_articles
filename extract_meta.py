@@ -18,6 +18,7 @@ def combine_files():
 
                 # Add the YAML data to the "data" dictionary
                 data[filename] = metadata
+    
 
     # Write the combined data to data.yml
     with open("./data.yml", "w") as f:

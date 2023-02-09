@@ -10,9 +10,7 @@ title: Tkn
 
 ### Overview
 
-Tokenization is the process of breaking down a larger body of text into smaller units called tokens. In the context of Natural Language Processing (NLP), tokenization is used to split text into meaningful elements such as words, punctuation marks, and numbers. The goal of tokenization is to convert unstructured text into a structured form that can be processed by NLP algorithms and models.
-
-Despite their pervasiveness in the NLP pipeline, existing tokenization algorithms have several limitations:
+Tokenization is the process of breaking down a larger body of text into smaller units called tokens. In the context of Natural Language Processing (NLP), tokenization is used to split text into meaningful elements such as words, punctuation marks, and numbers. The goal of tokenization is to convert unstructured text into a structured form that can be processed by NLP algorithms and models. Despite their pervasiveness in the NLP pipeline, existing tokenization algorithms have several limitations:
 
 - Ambiguity: Tokenization algorithms can struggle with ambiguity, especially when it comes to determining where one word ends and another begins. For example, in English, contractions such as "I'm" can be difficult to tokenize accurately.
 
@@ -24,15 +22,13 @@ Despite their pervasiveness in the NLP pipeline, existing tokenization algorithm
 
 - Unicode Issues: Tokenization algorithms can struggle with handling Unicode characters, such as emoji or non-Latin script, accurately.
 
-The goal of this project is to provide a single, unsupervised, language agnostic tokenization algorithm which addresses the above issues.
-
 ### Theory
 
 A core commonality among all languages is the use of repeating patterns of characters, called "morphemes", to convey meaning. Morphemes are the smallest units of meaning in a language, and they can be combined to form words and sentences. This repetition of morphemes is a fundamental aspect of language and is found in all languages, regardless of their complexity or origin.
 
 Another important aspect of this repetition of morphemes is that the number of morphemes in a language is typically much smaller than the number of words, and even smaller than the number of possible character permutations. This relationship between the number of morphemes and the number of character permutations is a commonality among all languages and enables speakers to efficiently convey complex ideas using a relatively small set of building blocks. The use of recurring patterns and structures in language also allows speakers to quickly recognize and understand words, even if they are unfamiliar with them, by breaking them down into their constituent morphemes. For example, the possible permutations of n characters from english letters is n^26, but the set of english words is around 170,000, the set of morphemes is generally agreed to be less than 60,000, and the number of letters is only 26.
 
-This tokenization algorithm uses a dynamic sliding window approach to parse tokens from a body of text. It maintains a persistent directed graph of encountered tokens (S), where each token is represented as a node. The algorithm uses a sliding window (W) to scan the body of text and grow the window if the current window is found in S. If the window is not found in S, a new window begins where the last one ended. In either case, the window is added to S. Because of this approach, S will contain many tokens that are not actual morphemes, but the probability of encountering the same non-morpheme window later is low. As a result, the number of morphemes will be a small percentage of tokens in S, but for a token in S of length n, the tokens that are most likely to be morphemes will have the most relationships. This algorithm allows the system to learn the morphemes of any language without any prior information.
+This tokenization algorithm uses a dynamic sliding window approach to parse tokens from a body of text. It maintains a persistent directed graph of encountered tokens (S), where each token is represented as a node. The algorithm uses a sliding window (W) to scan the body of text and grow the window if the current window is found in S. If the window is not found in S, a new window begins where the last one ended. In either case, the window is added to S. Because of this approach, S will contain many tokens that are not actual morphemes, but the probability of encountering the same non-morpheme window later is low. As a result, the number of morphemes will be a small percentage of tokens in S, but for a token in S of length n, the tokens that are most likely to be morphemes will have the most relationships. This algorithm allows the system to learn the morphemes of any language without any prior information. The goal of this project is to provide a single, unsupervised, language agnostic tokenization algorithm which addresses the above issues.
 
 ### Algorithm
 
