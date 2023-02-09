@@ -1,7 +1,9 @@
 ---
 author: Zach Garrett
-tags: nlp linguistics research tokenization
+date: Feb 6, 2023
 path: tkn
+tags: nlp linguistics research tokenization
+title: Tkn
 ---
 
 ## Tokenization via Dynamic Sliding Window Regression

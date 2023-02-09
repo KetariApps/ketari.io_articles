@@ -1,0 +1,35 @@
+name: Extract Metadata
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  combine:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x
+
+    - name: Install dependencies
+      run: |
+        pip3 install python-frontmatter
+        pip3 install ruamel.yaml
+
+    - name: Extract Metadata
+      run: |
+        echo "Extracting metadata from articles..."
+        python3 extract_meta.py
+
+    - name: Commit changes
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: 'Update data'
+        add_files: 'data.yml'
