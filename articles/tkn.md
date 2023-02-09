@@ -59,6 +59,6 @@ Return R
 
 ### Addressing the issues of current tokenization algorithms
 
-- This algorithm can be thought of as a system for recognizing repetitious patterns in the input data. The system doen't need to know any characteristics of the data at its onset. Regardless of the language, the morphemes will emerge as the nodes in the graph with high centrality relative to nodes with the same number of characters.
+- This algorithm can be thought of as a system for recognizing repetitious patterns in the input data. The system doesn't need to know any characteristics of the data at its onset. Regardless of the language, the morphemes will emerge as the nodes in the graph with high centrality relative to nodes with the same number of characters.
 
 - If the current window (W) exists in the set of previously encountered tokens (S), the window grows to include the next character. If the window is not found in S, a new window starts from the last window's end. This approach allows the algorithm to decompose unknown words into morphemes. This is useful for handling complex word structures, including semantic composition.
