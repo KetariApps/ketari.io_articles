@@ -43,20 +43,20 @@ While L <= |D|
 
     Let W = D[dO:dL]
 
-    If node W not exists in S
-        Add node W to S
-        Add a directed arc the second to last node in R to node W in S
-
     If W exists in S
         L ++
         Replace the last node in R with W
 
     If W not exists in S
+        Add node W to S
         L = 1
         O = O + L - 1
 
+    Add a directed arc the second to last node in R to node W in S
+
 Return R
 ```
+
 ### Addressing the issues of current tokenization algorithms
 
 - This algorithm can be thought of as a system for recognizing repetitious patterns in the input data. The system doen't need to know any characteristics of the data at its onset. Regardless of the language, the morphemes will emerge as the nodes in the graph with high centrality relative to nodes with the same number of characters.
