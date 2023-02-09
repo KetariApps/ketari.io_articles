@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  combine:
+  extract_metadata:
     runs-on: ubuntu-latest
 
     steps:
