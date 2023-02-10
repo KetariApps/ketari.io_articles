@@ -10,7 +10,7 @@ title: Tkn
 
 ### Overview
 
-Tokenization is the process of breaking down a larger body of text into smaller units called tokens. In the context of Natural Language Processing (NLP), tokenization is used to split text into meaningful elements such as words, punctuation marks, and numbers. The goal of tokenization is to convert unstructured text into a structured form that can be processed by NLP algorithms and models. Despite their pervasiveness in the NLP pipeline, existing tokenization algorithms have several limitations:
+Tokenization is the process of breaking down a larger body of text into smaller units called tokens. In the context of Natural Language Processing (NLP), tokenization is used to split text into meaningful elements such as words, punctuation marks, and numbers. The goal of tokenization is to convert unstructured text into a structured form that can be processed by NLP algorithms and models. The goal of this project is to develop an approach to tokenization which addresses the following issues:
 
 - Ambiguity: Tokenization algorithms can struggle with ambiguity, especially when it comes to determining where one word ends and another begins. For example, in English, contractions such as "I'm" can be difficult to tokenize accurately.
 
@@ -18,9 +18,6 @@ Tokenization is the process of breaking down a larger body of text into smaller 
 
 - Language-Specific Issues: Tokenization algorithms can vary in accuracy depending on the language they are used on. For example, in some languages, words are not separated by white spaces, making tokenization more challenging.
 
-- Out-of-Vocabulary (OOV) Tokens: Tokenization algorithms may encounter tokens that are not present in their vocabulary. This can be particularly problematic for NLP models that rely on a fixed vocabulary, as OOV tokens may not be processed correctly.
-
-- Unicode Issues: Tokenization algorithms can struggle with handling Unicode characters, such as emoji or non-Latin script, accurately.
 
 ### Theory
 
