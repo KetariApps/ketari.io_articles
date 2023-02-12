@@ -31,31 +31,35 @@ This tokenization algorithm uses a dynamic sliding window approach to parse toke
 
 ```
 Let D be a string
-Let S be a persistent directed graph of encountered tokens
-Let O = 0
-Let L = 0
-Let R = []
+Let G be a persistent directed graph of encountered tokens
 
-While L <= |D|
+R = []
+O = 0
+L = 1
+while O+L <= len(D):
+    W = (D[O:O + L])
 
-    Let W = D[dO:dL]
+    is_in_graph = G.contains(W)
 
-    If W exists in S
-        L ++
-        Replace the last node in R with W
+    if is_in_graph:  # Replace the last element in R with W and grow the window
+        if len(W.split(",")) > 1:
+            R[len(R) - 1] = W
+        else:
+            R.append(W)
+        L += 1
 
-    If W not exists in S
-        Add node W to S
-        L = 1
-        Let O_n = O + L - 1
-        If O_n < 0
-            O = 0
-        Else
-            O = O_n
+    if not is_in_graph:  # Add W to the graph and reset the window
+        G.add_node(W)
+        if L == 1:
+            O = O + L
+        else:
+            O = O + L - 1
+                L = 1
 
-    Add a directed arc the second to last node in R to node W in S
+        if len(R) > 1:  # Add an edge from the second to last node in R to node W in G
+            G.add_edge(R[len(R) - 2], W)
 
-Return R
+return R
 ```
 
 ### Addressing limitations of current tokenization algorithms
