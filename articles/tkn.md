@@ -37,7 +37,7 @@ R = []
 O = 0
 L = 1
 while O+L <= len(D):
-    W = (D[O:O + L])
+    W = D[O:O + L]
 
     is_in_graph = G.contains(W)
 
