@@ -43,7 +43,7 @@ while O+L <= len(D):
 
     if is_in_graph:  # Replace the last element in R with W and grow the window
         if len(W.split(",")) > 1:
-            R[len(R) - 1] = W
+            R[- 1] = W
         else:
             R.append(W)
         L += 1
@@ -54,10 +54,10 @@ while O+L <= len(D):
             O = O + L
         else:
             O = O + L - 1
-                L = 1
+            L = 1
 
         if len(R) > 1:  # Add an edge from the second to last node in R to node W in G
-            G.add_edge(R[len(R) - 2], W)
+            G.add_edge(R[- 2], W)
 
 return R
 ```
