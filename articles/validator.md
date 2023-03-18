@@ -6,7 +6,7 @@ tags: nlp linguistics research logic
 title: validator
 ---
 
-## An AI Approach to Validating Your Ideas
+## An AI Tool to Validate Your Idea
 
 ### Overview
 
