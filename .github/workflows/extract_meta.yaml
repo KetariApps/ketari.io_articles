@@ -3,7 +3,8 @@ name: Extract Metadata
 on:
   push:
     branches:
-      - main
+      - 'main'
+      - 'develop'
 
 jobs:
   extract_metadata:
