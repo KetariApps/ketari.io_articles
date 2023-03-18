@@ -10,7 +10,8 @@ title: validator
 
 ### Overview
 
-As a company, Ketari recognizes the importance of effectively communicating our ideas and hypotheses to external stakeholders such as investors or potential partners. To make our ideas more compelling, we know we need to present them in a logical and easily understandable way. That\\’s why we\\’re thrilled to announce our new tool designed to help you validate your ideas.
+As a company, Ketari recognizes the importance of effectively communicating our ideas and hypotheses to external stakeholders such as investors or potential partners. To make our ideas more compelling, we know we need to present them in a logical and easily understandable way.
+
 We began by using ChatGPT to analyze our ideas and generate logical arguments by breaking down our hypotheses into premises and testing the assumptions of those premises. While this approach proved effective, we found the process to be repetitive and time-consuming.
 To improve the consistency and quality of the results, we developed a tool that streamlines the process and can handle various types of ideas, hypotheses, and assertions. We’re currently working on the product and plan to launch an open beta in the next few weeks. Here is an example of the input and output you can expect from our tool:
 
