@@ -3,7 +3,7 @@ author: Zach Garrett
 date: March 18, 2023
 path: validator
 tags: nlp linguistics research logic
-title: validator
+title: Validator
 ---
 
 ## An AI Tool to Validate Your Idea
