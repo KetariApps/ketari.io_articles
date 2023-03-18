@@ -4,3 +4,9 @@ tkn.md:
   path: tkn
   tags: nlp linguistics research tokenization
   title: Tkn
+validator.md:
+  author: Zach Garrett
+  date: March 18, 2023
+  path: validator
+  tags: nlp linguistics research logic
+  title: validator
