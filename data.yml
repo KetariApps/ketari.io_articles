@@ -1,12 +1,13 @@
-tkn.md:
-  author: Zach Garrett
-  date: Feb 6, 2023
-  path: tkn
-  tags: nlp linguistics research tokenization
-  title: Tkn
 validator.md:
   author: Zach Garrett
   date: March 18, 2023
   path: validator
   tags: nlp linguistics research logic
   title: Validator
+teammotivationwork.md: {}
+tkn.md:
+  author: Zach Garrett
+  date: Feb 6, 2023
+  path: tkn
+  tags: nlp linguistics research tokenization
+  title: Tkn
