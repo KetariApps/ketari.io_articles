@@ -1,3 +1,11 @@
+---
+author: Jesse Smith
+date: Apr 6, 2023
+path: team-motivation
+tags: team business motivation dynamics
+title: "The Journey to Ketari: Motivation and Team Dynamics"
+---
+
 # The Journey to Ketari: Motivation and Team Dynamics
 
 So here I'm going to be writing a series of essays on team and motivation. Here's one about my journey as an Olympian and experiences we've had in the last year here at Ketari.
