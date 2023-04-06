@@ -1,7 +1,7 @@
 ---
 author: Jesse Smith
 date: Apr 6, 2023
-path: team-motivation
+path: teammotivationwork
 tags: team business motivation dynamics
 title: "The Journey to Ketari: Motivation and Team Dynamics"
 ---
