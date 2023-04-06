@@ -4,7 +4,12 @@ validator.md:
   path: validator
   tags: nlp linguistics research logic
   title: Validator
-teammotivationwork.md: {}
+teammotivationwork.md:
+  author: Jesse Smith
+  date: Apr 6, 2023
+  path: team-motivation
+  tags: team business motivation dynamics
+  title: 'The Journey to Ketari: Motivation and Team Dynamics'
 tkn.md:
   author: Zach Garrett
   date: Feb 6, 2023
