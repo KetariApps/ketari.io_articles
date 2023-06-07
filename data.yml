@@ -22,3 +22,9 @@ tkn.md:
   path: tkn
   tags: nlp linguistics research tokenization
   title: Tkn
+privacypolicy.md:
+  author: Logan Manning
+  date: Jun 7, 2023
+  path: privacy
+  tags: privacy policy documentation
+  title: Privacy Policy
