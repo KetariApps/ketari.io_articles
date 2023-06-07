@@ -1,7 +1,7 @@
 ---
 author: Logan Manning
 date: Jun 7, 2023
-path: privacy
+path: privacypolicy
 tags: privacy policy documentation
 title: Privacy Policy
 ---
