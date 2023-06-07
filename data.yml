@@ -1,27 +1,27 @@
-tkn.md:
-  author: Zach Garrett
-  date: Feb 6, 2023
-  path: tkn
-  tags: nlp linguistics research tokenization
-  title: Tkn
 validator.md:
   author: Zach Garrett
   date: March 18, 2023
   path: validator
   tags: nlp linguistics research logic
   title: Validator
-privacypolicy.md:
-  author: Logan Manning
-  date: Jun 7, 2023
-  path: privacypolicy
-  tags: privacy policy documentation
-  title: Privacy Policy
+tkn.md:
+  author: Zach Garrett
+  date: Feb 6, 2023
+  path: tkn
+  tags: nlp linguistics research tokenization
+  title: Tkn
 teammotivationwork.md:
   author: Jesse Smith
   date: Apr 6, 2023
   path: teammotivationwork
   tags: team business motivation dynamics
   title: 'The Journey to Ketari: Motivation and Team Dynamics'
+privacypolicy.md:
+  author: Logan Manning
+  date: Jun 7, 2023
+  path: privacypolicy
+  tags: privacy policy documentation
+  title: Privacy Policy
 streaming.md:
   author: Jesse Smith
   date: April 10, 2023
